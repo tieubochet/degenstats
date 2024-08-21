@@ -19,8 +19,8 @@ const roboto = Rubik_Bubbles({ weight: ["400"], subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Check Masks",
-  description: "use this frame to check mask stats",
+  title: "Check DEGEN STATS",
+  description: "use this frame to check degen stats",
 };
 
 export default function RootLayout({

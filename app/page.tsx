@@ -22,11 +22,11 @@ export async function generateMetadata({
   const castActionUrl = new URL("/api/cast-action", appURL());
 
   return {
-    title: "Check Masks stats",
-    description: "use this frame to check masks stats.",
+    title: "Check DEGEN STATS",
+    description: "use this frame to check degen stats.",
     openGraph: {
-      title: "Check Masks stats",
-      description: "use this frame to check masks stats.",
+      title: "Check DEGEN STATS",
+      description: "use this frame to check degen stats.",
       images: [`${framesUrl.origin}/api/og`],
     },
     other: {
