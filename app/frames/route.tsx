@@ -20,7 +20,6 @@ const frameHandler = frames(async (ctx) => {
     socialCapitalScore: string;
     socialCapitalRank: string;
     profileDisplayName: string;
-    isPowerUser: boolean;
     profileImageUrl: string;
   }
 
@@ -57,7 +56,6 @@ const frameHandler = frames(async (ctx) => {
           socialCapitalScore:
             social.socialCapital?.socialCapitalScore?.toFixed(2) || "N/A",
           socialCapitalRank: social.socialCapital?.socialCapitalRank || "N/A",
-          isPowerUser: social.isFarcasterPowerUser || false,
           profileImageUrl:
             social.profileImageContentValue?.image?.extraSmall ||
             social.profileImage ||
