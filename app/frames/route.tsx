@@ -132,10 +132,8 @@ const frameHandler = frames(async (ctx) => {
   }`;
   
   const degenstatsdata = (await fetch(degenstats));
-  console.log(degenstatsdata);
 
   const degentatsJSON = await degenstatsdata.json();
-  console.log(degentatsJSON[0]);
 
   const degensrank = `https://api.degen.tips/airdrop2/current/points?wallet=${
     degentatsJSON[0].wallet_addresses ? `${degentatsJSON[0].wallet_addresses}` : ""
