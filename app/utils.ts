@@ -27,8 +27,7 @@ export function appURL() {
 
 export function vercelURL() {
   return process.env.VERCEL_URL
-    ? `https://check-degen-stats-bay.vercel.app
-`
+    ? `https://check-degen-stats-bay.vercel.app`
     : undefined;
 }
 
