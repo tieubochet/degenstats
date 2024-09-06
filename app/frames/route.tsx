@@ -199,7 +199,7 @@ const frameHandler = frames(async (ctx) => {
   );
 
   // Change the url here
-  const shareUrl = `https://warpcast.com/~/compose?text=${shareText}&embeds[]=https://check-degen-stats-bay.vercel.app/frames${
+  const shareUrl = `https://warpcast.com/~/compose?text=${shareText}&embeds[]=https://check-degen-stats-v7.vercel.app/frames${
     fid ? `?userfid=${fid}` : ""
   }`;
 
