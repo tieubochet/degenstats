@@ -124,7 +124,7 @@ const frameHandler = frames(async (ctx) => {
     fid && (!userData || (userData as UserData).fid !== fid);
 
   if (shouldFetchData && fid) {
-    await Promise.all([fetchUserData(fid), fetchMoxieData(fid)]);
+    await Promise.all([fetchUserData(fid)]);
   }
 
   const degenstats = `https://api.degen.tips/airdrop2/allowances?fid=${
@@ -138,12 +138,13 @@ const frameHandler = frames(async (ctx) => {
   console.log(degentatsJSON[0]);
 
   const degensrank = `https://api.degen.tips/airdrop2/current/points?wallet=${
-    degentatsJSON[0].wallet_addresses ? `${degentatsJSON[0].wallet_addresses}` : ""
+    degentatsJSON[0].wallet_addresses[0] ? `${degentatsJSON[0].wallet_addresses[0]}` : ""
   }`;
+  //console.log("degensrank:" + degensrank);
 
   const degenrankdata = (await fetch(degensrank));
   const degenrankJSON = await degenrankdata.json();
-  console.log(degenrankJSON);
+  //console.log(degenrankJSON);
 
 
   const SplashScreen = () => (
