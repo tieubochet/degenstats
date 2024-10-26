@@ -200,14 +200,9 @@ const frameHandler = frames(async (ctx) => {
   );
 
   // Change the url here
-  const cacheBust = new Date().getTime();
-
-  const shareUrl = `https://warpcast.com/~/compose?text=${shareText}&embeds[]=${encodeURIComponent(
-    appURL() +
-      (fid
-        ? `?userfid=${fid}&c=${cacheBust}`
-        : `?c=${cacheBust}`)
-  )}`;
+  const shareUrl = `https://warpcast.com/~/compose?text=${shareText}&embeds[]=https://check-degen-stats-v7.vercel.app/frames${
+    fid ? `?userfid=${fid}` : ""
+  }`;
 
   const buttons = [];
 
