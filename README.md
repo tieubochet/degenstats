@@ -1,13 +1,10 @@
-# Moxie Airstack Demo Frame
-
-> Let a thousand Moxie frames bloom.
+# Degen Stats Frame
 
 This project is a Farcaster Frame built using [frames.js](https://framesjs.org/) the [Airstack](https://airstack.xyz) validator and node package.
 
 ## Features
 
 - Frames.js with TailwindCSS for styling
-- Airstack API integration for Far Score and Moxie earnings data
 - Cast Action Install
 - Airstack validator integration for Moxie everyday rewards
 - Ready for deployment on Vercel
@@ -55,22 +52,13 @@ This project includes the Airstack validator, which you need to earn Moxie rewar
 
 ##
 
-## API Routes
-
-The project includes two main API routes:
-
-1. `/api/farscore`: Fetches user social capital data from Airstack.
-2. `/api/moxie-earnings`: Retrieves Moxie earnings data for a user.
-
-These routes are used internally by the Frame to display user information and earnings.
-
 ## Cast Action
 
 The project includes a Cast Action install button. Make sure to customize the link with your own frame url. The Cast Action is defined in the `/api/cast-action/route.tsx` file.
 
 ## Warpcast Validation
 
-![CleanShot 2024-08-15 at 09 10 58@2x](https://github.com/user-attachments/assets/46bff4fd-4a1e-47a4-81a8-8f936c238975)
+![CleanShot 2024-08-15 at 09 10 58@2x](https://i.imgur.com/xDc30ms.png)
 
 Check your frame at https://warpcast.com/~/developers/frames . Be sure to use the short url that vercel gives you (Warpcast doesn't like long urls), and add /frames to the end (as in the screenshot above).
 
