@@ -193,11 +193,7 @@ const frameHandler = frames(async (ctx) => {
       
     );
   };
-  const shareText = encodeURIComponent(
-    userData
-      ? `🎩 Check your DEGEN STATS 🎩 Frame created by @tieubochet.eth`
-      : "🎩 Check your DEGEN STATS 🎩 Frame created by @tieubochet.eth"
-  );
+  const shareText = 'Check your DEGEN STATS here 👇 If you like this frame, please share and follow @tieubochet.eth 🤤';
 
   // Change the url here
   const shareUrl = `https://warpcast.com/~/compose?text=${shareText}&embeds[]=https://check-degen-stats-v7.vercel.app/frames${
