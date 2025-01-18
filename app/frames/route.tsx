@@ -193,7 +193,7 @@ const frameHandler = frames(async (ctx) => {
       
     );
   };
-  const shareText = 'Check your DEGEN STATS here 👇 If you like this frame, please share and follow @tieubochet.eth 🤤';
+  const shareText = '🎩 Check your DEGEN STATS here 👇 If you like this frame, please share and follow @tieubochet.eth 🤤';
 
   // Change the url here
   const shareUrl = `https://warpcast.com/~/compose?text=${shareText}&embeds[]=https://check-degen-stats-v7.vercel.app/frames${
@@ -205,13 +205,13 @@ const frameHandler = frames(async (ctx) => {
   if (!userData) {
     buttons.push(
       <Button action="post" target={{ href: `${appURL()}?userfid=${fid}` }}>
-        My Stats
+        Check yours
       </Button>
     );
   } else {
     buttons.push(
       <Button action="post" target={{ href: `${appURL()}?userfid=${fid}` }}>
-        My Stats
+        Check yours
       </Button>,
       <Button action="link" target={shareUrl}>
         Share
