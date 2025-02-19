@@ -10,9 +10,9 @@ export const GET = async (req: NextRequest) => {
       type: "post",
     },
     icon: "pulse",
-    name: "Moxie Demo Frame",
+    name: "Check DEGEN STATS",
     aboutUrl: `${appURL()}`,
-    description: "Use this as a base to build moxie stats frames",
+    description: "Check your DEGEN STATS by @tieubochet.eth",
   });
 };
 
