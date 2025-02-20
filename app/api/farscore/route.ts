@@ -7,7 +7,7 @@ if (!apiKey) {
 }
 init(apiKey);
 
-console.log("Airstack API initialized");
+//console.log("Airstack API initialized");
 
 const userQuery = `
 query GetUserSocialCapital($userId: String!) {
@@ -35,8 +35,8 @@ query GetUserSocialCapital($userId: String!) {
 `;
 
 export async function GET(req: NextRequest) {
-  console.log(`API route called at ${new Date().toISOString()}`);
-  console.log(`Full URL: ${req.url}`);
+  //console.log(`API route called at ${new Date().toISOString()}`);
+  //console.log(`Full URL: ${req.url}`);
 
   const userId = req.nextUrl.searchParams.get("userId");
   console.log(`Requested userId: ${userId}`);
