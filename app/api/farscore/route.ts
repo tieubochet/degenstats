@@ -39,10 +39,10 @@ export async function GET(req: NextRequest) {
   //console.log(`Full URL: ${req.url}`);
 
   const userId = req.nextUrl.searchParams.get("userId");
-  console.log(`Requested userId: ${userId}`);
+  //console.log(`Requested userId: ${userId}`);
 
   if (!userId) {
-    console.log("Error: userId parameter is missing");
+    //console.log("Error: userId parameter is missing");
     return NextResponse.json(
       { error: "userId parameter is required" },
       { status: 400 }
