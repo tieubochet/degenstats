@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    console.log(`Fetching data from Airstack for userId: ${userId}`);
+    //console.log(`Fetching data from Airstack for userId: ${userId}`);
     const [userData] = await Promise.all([fetchQuery(userQuery, { userId })]);
 
     if (userData.error) {
