@@ -37,5 +37,5 @@ export async function generateMetadata({
 }
 
 export default function Page() {
-  return <span>Loading...</span>;
+  return <span>Loading, wait a minute...</span>;
 }
