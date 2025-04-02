@@ -105,10 +105,10 @@ const frameHandler = frames(async (ctx) => {
 
   if (ctx.message?.requesterFid) {
     fid = ctx.message.requesterFid.toString();
-    console.log("Using requester FID:", fid);
+    //console.log("Using requester FID:", fid);
   } else if (ctx.url) {
     fid = extractFid(ctx.url.toString());
-    console.log("Extracted FID from URL:", fid);
+    //console.log("Extracted FID from URL:", fid);
   } else {
     console.log("No ctx.url available");
   }
