@@ -35,14 +35,14 @@ query GetUserSocialCapital($userId: String!) {
 `;
 
 export async function GET(req: NextRequest) {
-  //console.log(`API route called at ${new Date().toISOString()}`);
-  //console.log(`Full URL: ${req.url}`);
+  console.log(`API route called at ${new Date().toISOString()}`);
+  console.log(`Full URL: ${req.url}`);
 
   const userId = req.nextUrl.searchParams.get("userId");
-  //console.log(`Requested userId: ${userId}`);
+  console.log(`Requested userId: ${userId}`);
 
   if (!userId) {
-    //console.log("Error: userId parameter is missing");
+    console.log("Error: userId parameter is missing");
     return NextResponse.json(
       { error: "userId parameter is required" },
       { status: 400 }
@@ -50,11 +50,11 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    //console.log(`Fetching data from Airstack for userId: ${userId}`);
+    console.log(`Fetching data from Airstack for userId: ${userId}`);
     const [userData] = await Promise.all([fetchQuery(userQuery, { userId })]);
 
     if (userData.error) {
-      //console.error("Airstack API error (user data):", userData.error);
+      console.error("Airstack API error (user data):", userData.error);
       return NextResponse.json(
         { error: userData.error.message },
         { status: 500 }
