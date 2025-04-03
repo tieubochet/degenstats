@@ -10,7 +10,7 @@ export const GET = async (req: NextRequest) => {
       type: "post",
     },
     icon: "pulse",
-    name: "Check DEGEN STATS",
+    name: "Check DEGEN STATS v8",
     aboutUrl: `${appURL()}`,
     description: "Check your DEGEN STATS by @tieubochet.eth",
   });
